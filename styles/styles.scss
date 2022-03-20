@@ -61,12 +61,12 @@ section{
 .sec2{
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
+  background-color: greenyellow;
 }
 .sec3{
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
+  background-color: rgb(188, 205, 90);
 }
 .sec4{
   display: none;
@@ -76,8 +76,21 @@ section{
 .sec5{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: orange;
 }
+.active{
+display: block;
+animation: scaleAnim 1s ease-in-out;
+@keyframes scaleAnim {
+   0%{
+    transform: translateY(-100%) scaleY(0);
+   }
 
+   100%{
+    transform: translateY(0) scaleY(1);
+   }
+ }
+}
 //controls
 .controls{
   position: fixed;
